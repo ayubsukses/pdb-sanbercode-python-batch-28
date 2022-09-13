@@ -1,0 +1,6 @@
+Data Peserta Bootcamp Digital Skill - Python Backend Development
+1. Nama: Ayub
+2. Email: ayub.sukses04@gmail.com
+3. Sistem Operasi yang digunakan: Windows 10
+4. Akun Gitlab/Github: ayubsukses
+5. Akun Telegram: Ayub
