@@ -1,3 +1,7 @@
+# variabel = tempat menyimpan data.
+
+
+
 # inisiasi satu-satu
 a = 1
 b = 2
