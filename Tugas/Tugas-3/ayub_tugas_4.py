@@ -201,10 +201,10 @@ europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn',
           'australia':'vienna' }
 
 # update nilai ibukota german ke berlin
-
+europe['germany'] = 'berlin'
 
 # remove australia dari europa
-
+europe.pop('australia')
 
 print(europe)
 
@@ -227,11 +227,11 @@ country = {
          }
 
 # berapa populasi dari kota german?
-
+print(country['germany']['population'])
 
 # update data baru, yaitu negara indonesia dengan capital jakarta dan poulasi 250
 
-
+country['indonesia'] =  {'capital' : 'jakarta', 'population' : 250}
 print(country)
 
 Expected Output:
@@ -260,6 +260,9 @@ for ..., .... in country.items():
     print('Ibukota '+....+' adalah ' + ....)
 
 Expected Output:
+
+for key, value in country.items():
+    print('Ibukota '+key+' adalah ' + key)
     
 Ibukota spain adalah madrid
 
@@ -286,7 +289,7 @@ Hilangkan nilai duplikat dari sebuah objek list dengan menggunakan cara set sehi
 obj_list = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 9, 10]
 
 #using set
-
+obj
 Expected output: 
 
 {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -302,9 +305,12 @@ Ubahlah dan hapus anggota set sehingga mendapatkan hasil yang diinginkan
 set_1 = {1, 2, 3, 4, 5}
 
 #tambahkan anggota set dengan nilai {6,7,8}
+set_1.update([6, 7, 8])
 
 #hapus nilai anggota set 8
+set_1.remove(8)
 
+print(set_1)
 Expected output:
 
 {1, 2, 3, 4, 5, 6, 7}
